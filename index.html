@@ -1,1 +1,194 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da sua Torcida Organizada</title>
+    <link rel="stylesheet" href="style.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Cor de fundo escura */
+            color: #fff; /* Cor do texto branca */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50; /* Cor de fundo do cabeçalho mais escura */
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #e74c3c; /* Linha inferior vermelha */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #e74c3c; /* Vermelho ao passar o mouse */
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            background-color: #1f1f1f; /* Cor de fundo das seções */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+        section h2,
+        section h3 {
+            color: #e74c3c; /* Vermelho para títulos de seção */
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        #principal {
+            text-align: center;
+        }
+        #principal p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ddd;
+        }
+        #noticias-destaque article {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #444; /* Separador entre notícias */
+            padding-bottom: 1.5rem;
+        }
+        #noticias-destaque article:last-child {
+            border-bottom: none; /* Remove o separador da última notícia */
+        }
+
+        #noticias-destaque article h4{
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        #proximos-eventos ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #proximos-eventos ul li {
+            background-color: #2c3e50; /* Cor de fundo dos itens de evento */
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between; /* Espaçamento entre data/hora e nome/local */
+            align-items: center;
+        }
+        #proximos-eventos ul li span {
+            font-weight: 600;
+            color: #fff;
+        }
+        footer {
+            background-color: #2c3e50;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 2px solid #e74c3c;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            #proximos-eventos ul li {
+                flex-direction: column;
+                text-align: center;
+            }
+            #proximos-eventos ul li span{
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nome da sua Torcida Organizada</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="principal">
+            <h2>Bem-vindos à [Nome da sua Torcida Organizada]!</h2>
+            <p>Aqui você encontra as últimas notícias, informações sobre eventos, fotos, vídeos e tudo sobre a nossa paixão pelo [Nome do Time].</p>
+            </section>
+
+        <section id="noticias-destaque">
+            <h3>Últimas Notícias</h3>
+            <article>
+                <h4>[Título da Notícia 1]</h4>
+                <p>[Resumo da Notícia 1]</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article>
+                <h4>[Título da Notícia 2]</h4>
+                <p>[Resumo da Notícia 2]</p>
+                <a href="#">Leia mais</a>
+            </article>
+            </section>
+
+        <section id="proximos-eventos">
+            <h3>Próximos Eventos</h3>
+            <ul>
+                <li>
+                    <span>[Data e Hora]</span>
+                    <span>[Nome do Evento] - [Local]</span>
+                </li>
+                <li>
+                    <span>[Data e Hora]</span>
+                    <span>[Nome do Evento] - [Local]</span>
+                </li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; [Ano] [Nome da sua Torcida Organizada]. Todos os direitos reservados.</p>
+        </footer>
+
+    <script src="script.js"></script> </body>
+</html>
